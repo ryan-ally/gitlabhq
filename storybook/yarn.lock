@@ -8777,10 +8777,10 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz#e1f1b7e1a59b6083b2596a8d067f6ee88fd4d3cf"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
-storybook-mirage@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/storybook-mirage/-/storybook-mirage-0.0.4.tgz#572e5d310ad8f0dd963e5c341aa2402f8ed07749"
-  integrity sha512-oGjsxyxmedXQtsVW1DDwKM1RocAD5zClFeOFtAhK46NcGXLJ31m2WQg5kL7YqrsriorrCZq4vvSy05DVCD7BKQ==
+storybook-mirage@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/storybook-mirage/-/storybook-mirage-0.0.7.tgz#bde3072c459f5369067b9128f0cd1735eb2cedad"
+  integrity sha512-8+h5fYhTOQaIzUls7UVV9rtgaImPZ6dLmhgqMpeVebqWpm6lD9oMIVbzBlt486iYSDdDbNYM464IvRtVQHCcug==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
