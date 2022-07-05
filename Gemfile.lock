@@ -304,7 +304,7 @@ GEM
       rotp (~> 6.0)
     diff-lcs (1.4.4)
     diff_match_patch (0.1.0)
-    diffy (3.3.0)
+    diffy (3.4.2)
     discordrb-webhooks (3.4.2)
       rest-client (>= 2.0.0)
     docile (1.4.0)
@@ -1523,7 +1523,7 @@ DEPENDENCIES
   devise-pbkdf2-encryptable (~> 0.0.0)!
   devise-two-factor (~> 4.0.2)
   diff_match_patch (~> 0.1.0)
-  diffy (~> 3.3)
+  diffy (~> 3.4)
   discordrb-webhooks (~> 3.4)
   doorkeeper (~> 5.5.0.rc2)
   doorkeeper-openid_connect (~> 1.7.5)
