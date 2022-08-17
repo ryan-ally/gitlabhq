@@ -12,7 +12,7 @@
     "@storybook/addon-a11y": "^6.2.9",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-controls": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-essentials": "^6.5.8",
     "@storybook/vue": "6.2.9",
     "graphql-tag": "^2.12.5",
     "postcss-loader": "3.0.0",
