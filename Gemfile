@@ -37,24 +37,24 @@ gem 'doorkeeper', '~> 5.5.0.rc2'
 gem 'doorkeeper-openid_connect', '~> 1.7.5'
 gem 'rexml', '~> 3.2.5'
 gem 'ruby-saml', '~> 1.13.0'
-gem 'omniauth', '~> 1.8'
+gem 'omniauth', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-auth0', '~> 2.0.0'
-gem 'omniauth-azure-activedirectory-v2', '~> 1.0'
-gem 'omniauth-azure-oauth2', '~> 0.0.9' # Deprecated v1 version
+gem 'omniauth-azure-activedirectory-v2', '~> 1.0', '>= 1.0.0'
+gem 'omniauth-azure-oauth2', '~> 0.0.10' # Deprecated v1 version
 gem 'omniauth-cas3', '~> 1.1.4'
-gem 'omniauth-dingtalk-oauth2', '~> 1.0'
+gem 'omniauth-dingtalk-oauth2', '~> 1.0', '>= 1.0.1'
 gem 'omniauth-alicloud', '~> 1.0.1'
 gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-github', '~> 1.4'
+gem 'omniauth-github', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-gitlab', '~> 4.0.0', path: 'vendor/gems/omniauth-gitlab' # See vendor/gems/omniauth-gitlab/README.md
 gem 'omniauth-google-oauth2', '~> 0.6.0'
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-shibboleth', '~> 1.3.0'
-gem 'omniauth-twitter', '~> 1.4'
+gem 'omniauth-twitter', '~> 1.4', '>= 1.4.0'
 gem 'omniauth_crowd', '~> 2.4.0'
 gem 'omniauth-authentiq', '~> 0.3.3'
-gem 'gitlab-omniauth-openid-connect', '~> 0.9.0', require: 'omniauth_openid_connect'
+gem 'gitlab-omniauth-openid-connect', '~> 0.10.0', require: 'omniauth_openid_connect'
 gem 'omniauth-salesforce', '~> 1.0.5'
 gem 'omniauth-atlassian-oauth2', '~> 0.2.0'
 gem 'rack-oauth2', '~> 1.19.0'
@@ -93,7 +93,7 @@ gem 'gpgme', '~> 2.0.19'
 # LDAP Auth
 # GitLab fork with several improvements to original library. For full list of changes
 # see https://github.com/intridea/omniauth-ldap/compare/master...gitlabhq:master
-gem 'gitlab_omniauth-ldap', '~> 2.1.1', require: 'omniauth-ldap'
+gem 'gitlab_omniauth-ldap', '~> 2.2.0', require: 'omniauth-ldap'
 gem 'net-ldap', '~> 0.16.3'
 
 # API
