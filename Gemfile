@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.1.4.7'
+gem 'rails', '~> 6.1.6.1'
 
 gem 'bootsnap', '~> 1.12.0', require: false
 
@@ -113,7 +113,7 @@ gem 'hashie'
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
 
 # HAML
 gem 'hamlit', '~> 2.15.0'
@@ -197,7 +197,7 @@ end
 gem 'state_machines-activerecord', '~> 0.8.0'
 
 # CI domain tags
-gem 'acts-as-taggable-on', '~> 9.0'
+gem 'acts-as-taggable-on', '~> 9.0', '>= 9.0.0'
 
 # Background jobs
 gem 'sidekiq', '~> 6.4'
@@ -327,7 +327,7 @@ gem 'thrift', '>= 0.14.0'
 gem 'ruby_parser', '~> 3.15', require: false
 gem 'rails-i18n', '~> 7.0'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.3', require: false, group: :development
 
 gem 'batch-loader', '~> 2.0.1'
@@ -465,7 +465,7 @@ gem 'stackprof', '~> 0.2.15', require: false
 gem 'rbtrace', '~> 0.4', require: false
 gem 'memory_profiler', '~> 0.9', require: false
 gem 'benchmark-memory', '~> 0.1', require: false
-gem 'activerecord-explain-analyze', '~> 0.1', require: false
+gem 'activerecord-explain-analyze', '~> 0.1', '>= 0.1.0', require: false
 
 # OAuth
 gem 'oauth2', '~> 2.0'
