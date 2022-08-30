@@ -18,6 +18,6 @@
     "postcss-loader": "3.0.0",
     "sass": "^1.49.9",
     "sass-loader": "^7.1.0",
-    "storybook-mirage": "^0.0.4"
+    "storybook-mirage": "^0.0.7"
   }
 }
