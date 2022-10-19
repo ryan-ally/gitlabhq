@@ -2,10 +2,10 @@
 
 source 'https://rubygems.org'
 
-gem 'gitlab-qa', '~> 7', require: 'gitlab/qa'
+gem 'gitlab-qa', '~> 7', '>= 7.33.0', require: 'gitlab/qa'
 gem 'activesupport', '~> 6.1.4.7' # This should stay in sync with the root's Gemfile
 gem 'allure-rspec', '~> 2.16.0'
-gem 'capybara', '~> 3.35.0'
+gem 'capybara', '~> 3.35.3'
 gem 'capybara-screenshot', '~> 1.0.23'
 gem 'rake', '~> 13'
 gem 'rspec', '~> 3.10'
@@ -23,12 +23,12 @@ gem 'parallel', '~> 1.19'
 gem 'rainbow', '~> 3.0.0'
 gem 'rspec-parameterized', '~> 0.4.2'
 gem 'octokit', '~> 4.21'
-gem 'webdrivers', '~> 5.0'
+gem 'webdrivers', '~> 5.0', '>= 5.0.0'
 gem 'zeitwerk', '~> 2.4'
 gem 'influxdb-client', '~> 1.17'
 gem 'terminal-table', '~> 3.0.0', require: false
 gem 'slack-notifier', '~> 2.4', require: false
-gem 'fog-google', '~> 1.17', require: false
+gem 'fog-google', '~> 1.17', '>= 1.17.0', require: false
 
 gem 'confiner', '~> 0.3'
 
