@@ -9,7 +9,7 @@ gem 'bootsnap', '~> 1.12.0', require: false
 # Responders respond_to and respond_with
 gem 'responders', '~> 3.0'
 
-gem 'sprockets', '~> 3.7.0'
+gem 'sprockets', '~> 4.2.0'
 
 gem 'view_component', '~> 2.50.0'
 
@@ -103,7 +103,7 @@ gem 'rack-cors', '~> 1.1.0', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.13.12'
-gem 'graphiql-rails', '~> 1.8'
+gem 'graphiql-rails', '~> 1.8', '>= 1.8.0'
 gem 'apollo_upload_server', '~> 2.1.0'
 gem 'graphql-docs', '~> 2.1.0', group: [:development, :test]
 gem 'graphlient', '~> 0.5.0' # Used by BulkImport feature (group::import)
@@ -327,7 +327,7 @@ gem 'thrift', '>= 0.14.0'
 gem 'ruby_parser', '~> 3.15', require: false
 gem 'rails-i18n', '~> 7.0'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.3', require: false, group: :development
 
 gem 'batch-loader', '~> 2.0.1'
