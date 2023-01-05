@@ -209,7 +209,7 @@ gem 'gitlab-sidekiq-fetcher', '0.8.0', require: 'sidekiq-reliable-fetch'
 gem 'fugit', '~> 1.2.1'
 
 # HTTP requests
-gem 'httparty', '~> 0.16.4'
+gem 'httparty', '~> 0.21.0'
 
 # Colored output to console
 gem 'rainbow', '~> 3.0'
@@ -248,7 +248,7 @@ gem 'jira-ruby', '~> 2.1.4'
 gem 'atlassian-jwt', '~> 0.2.0'
 
 # Flowdock integration
-gem 'flowdock', '~> 0.7'
+gem 'flowdock', '~> 0.7', '>= 0.7.1'
 
 # Slack integration
 gem 'slack-messenger', '~> 2.3.4'
