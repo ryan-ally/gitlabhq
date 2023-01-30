@@ -266,7 +266,7 @@ gem 'ruby-fogbugz', '~> 0.2.1'
 gem 'kubeclient', '~> 4.9.2'
 
 # Sanitize user input
-gem 'sanitize', '~> 6.0'
+gem 'sanitize', '~> 6.0', '>= 6.0.1'
 gem 'babosa', '~> 1.0.4'
 
 # Sanitizes SVG input
