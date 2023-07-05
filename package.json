@@ -48,7 +48,7 @@
   "dependencies": {
     "@apollo/client": "^3.5.10",
     "@babel/core": "^7.18.5",
-    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-env": "^7.22.6",
     "@gitlab/at.js": "1.5.7",
     "@gitlab/favicon-overlay": "2.0.0",
     "@gitlab/svgs": "2.25.0",
