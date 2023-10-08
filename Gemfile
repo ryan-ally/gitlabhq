@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.1.4.7'
+gem 'rails', '~> 7.1.0.0'
 
 gem 'bootsnap', '~> 1.12.0', require: false
 
@@ -67,7 +67,7 @@ gem 'timfel-krb5-auth', '~> 0.8', group: :kerberos
 # Spam and anti-bot protection
 gem 'recaptcha', '~> 4.11', require: 'recaptcha/rails'
 gem 'akismet', '~> 3.0'
-gem 'invisible_captcha', '~> 1.1.0'
+gem 'invisible_captcha', '~> 2.0.0'
 
 # Two-factor authentication
 gem 'devise-two-factor', '~> 4.0.2'
@@ -327,7 +327,7 @@ gem 'thrift', '>= 0.14.0'
 gem 'ruby_parser', '~> 3.15', require: false
 gem 'rails-i18n', '~> 7.0'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.1'
 gem 'gettext', '~> 3.3', require: false, group: :development
 
 gem 'batch-loader', '~> 2.0.1'
