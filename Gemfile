@@ -405,7 +405,7 @@ group :development, :test do
 
   gem 'sigdump', '~> 0.2.4', require: 'sigdump/setup'
 
-  gem 'pact', '~> 1.12'
+  gem 'pact', '~> 1.60', '>= 1.60.0'
 end
 
 group :development, :test, :danger do
