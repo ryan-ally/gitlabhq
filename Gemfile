@@ -7,7 +7,7 @@ gem 'rails', '~> 6.1.4.7'
 gem 'bootsnap', '~> 1.12.0', require: false
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 3.0'
+gem 'responders', '~> 3.0', '>= 3.0.1'
 
 gem 'sprockets', '~> 3.7.0'
 
@@ -23,13 +23,13 @@ gem 'rugged', '~> 1.2'
 gem 'grape-path-helpers', '~> 1.7.0'
 
 gem 'faraday', '~> 1.0'
-gem 'marginalia', '~> 1.10.0'
+gem 'marginalia', '~> 1.10.1'
 
 # Authorization
 gem 'declarative_policy', '~> 1.1.0'
 
 # Authentication libraries
-gem 'devise', '~> 4.7.2'
+gem 'devise', '~> 4.8.0'
 gem 'devise-pbkdf2-encryptable', '~> 0.0.0', path: 'vendor/gems/devise-pbkdf2-encryptable'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.14'
@@ -54,7 +54,7 @@ gem 'omniauth-shibboleth', '~> 1.3.0'
 gem 'omniauth-twitter', '~> 1.4'
 gem 'omniauth_crowd', '~> 2.4.0'
 gem 'omniauth-authentiq', '~> 0.3.3'
-gem 'gitlab-omniauth-openid-connect', '~> 0.9.0', require: 'omniauth_openid_connect'
+gem 'gitlab-omniauth-openid-connect', '~> 0.10.0', require: 'omniauth_openid_connect'
 gem 'omniauth-salesforce', '~> 1.0.5'
 gem 'omniauth-atlassian-oauth2', '~> 0.2.0'
 gem 'rack-oauth2', '~> 1.19.0'
@@ -67,16 +67,16 @@ gem 'timfel-krb5-auth', '~> 0.8', group: :kerberos
 # Spam and anti-bot protection
 gem 'recaptcha', '~> 4.11', require: 'recaptcha/rails'
 gem 'akismet', '~> 3.0'
-gem 'invisible_captcha', '~> 1.1.0'
+gem 'invisible_captcha', '~> 2.0.0'
 
 # Two-factor authentication
-gem 'devise-two-factor', '~> 4.0.2'
+gem 'devise-two-factor', '~> 4.1.0'
 gem 'rqrcode-rails3', '~> 0.1.7'
 gem 'attr_encrypted', '~> 3.1.0'
 gem 'u2f', '~> 0.2.1'
 
 # GitLab Pages
-gem 'validates_hostname', '~> 1.0.11'
+gem 'validates_hostname', '~> 1.0.13'
 gem 'rubyzip', '~> 2.3.2', require: 'zip'
 # GitLab Pages letsencrypt support
 gem 'acme-client', '~> 2.0', '>= 2.0.9'
@@ -103,7 +103,7 @@ gem 'rack-cors', '~> 1.1.0', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.13.12'
-gem 'graphiql-rails', '~> 1.8'
+gem 'graphiql-rails', '~> 1.9', '>= 1.9.0'
 gem 'apollo_upload_server', '~> 2.1.0'
 gem 'graphql-docs', '~> 2.1.0', group: [:development, :test]
 gem 'graphlient', '~> 0.5.0' # Used by BulkImport feature (group::import)
@@ -113,13 +113,13 @@ gem 'hashie'
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
 
 # HAML
 gem 'hamlit', '~> 2.15.0'
 
 # Files attachments
-gem 'carrierwave', '~> 1.3'
+gem 'carrierwave', '~> 1.3', '>= 1.3.3'
 gem 'mini_magick', '~> 4.10.1'
 
 # for backups
@@ -141,7 +141,7 @@ gem 'google-api-client', '~> 0.33'
 gem 'unf', '~> 0.1.4'
 
 # Seed data
-gem 'seed-fu', '~> 2.3.7'
+gem 'seed-fu', '~> 2.3.9'
 
 # Search
 gem 'elasticsearch-model', '~> 7.2'
@@ -171,7 +171,7 @@ gem 'asciidoctor-plantuml', '~> 0.0.12'
 gem 'asciidoctor-kroki', '~> 0.5.0', require: false
 gem 'rouge', '~> 3.29.0'
 gem 'truncato', '~> 0.7.11'
-gem 'bootstrap_form', '~> 4.2.0'
+gem 'bootstrap_form', '~> 4.3.0'
 gem 'nokogiri', '~> 1.13.6'
 gem 'escape_utils', '~> 1.1'
 
@@ -194,7 +194,7 @@ group :puma do
 end
 
 # State machine
-gem 'state_machines-activerecord', '~> 0.8.0'
+gem 'state_machines-activerecord', '~> 0.9.0'
 
 # CI domain tags
 gem 'acts-as-taggable-on', '~> 9.0'
@@ -238,7 +238,7 @@ gem 'redis', '~> 4.4.0'
 gem 'connection_pool', '~> 2.0'
 
 # Redis session store
-gem 'redis-actionpack', '~> 5.2.0'
+gem 'redis-actionpack', '~> 5.3.0'
 
 # Discord integration
 gem 'discordrb-webhooks', '~> 3.4', require: false
@@ -290,7 +290,7 @@ gem 'gitlab_chronic_duration', '~> 0.10.6.2'
 
 gem 'rack-proxy', '~> 0.7.2'
 
-gem 'sassc-rails', '~> 2.1.0'
+gem 'sassc-rails', '~> 2.1.1'
 gem 'autoprefixer-rails', '10.2.5.1'
 gem 'terser', '1.0.2'
 
@@ -315,10 +315,10 @@ gem 'sentry-sidekiq', '~> 5.1.1'
 #
 gem 'pg_query', '~> 2.1.0'
 
-gem 'premailer-rails', '~> 1.10.3'
+gem 'premailer-rails', '~> 1.11.0'
 
 # LabKit: Tracing and Correlation
-gem 'gitlab-labkit', '~> 0.23.0'
+gem 'gitlab-labkit', '~> 0.24.0'
 # Thrift is a dependency of gitlab-labkit, we want a version higher than 0.14.0
 # because of https://gitlab.com/gitlab-org/gitlab/-/issues/321900
 gem 'thrift', '>= 0.14.0'
@@ -327,7 +327,7 @@ gem 'thrift', '>= 0.14.0'
 gem 'ruby_parser', '~> 3.15', require: false
 gem 'rails-i18n', '~> 7.0'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.1'
 gem 'gettext', '~> 3.3', require: false, group: :development
 
 gem 'batch-loader', '~> 2.0.1'
@@ -372,7 +372,7 @@ group :development, :test do
 
   gem 'database_cleaner', '~> 1.7.0'
   gem 'factory_bot_rails', '~> 6.2.0'
-  gem 'rspec-rails', '~> 5.0.1'
+  gem 'rspec-rails', '~> 5.0.2'
 
   # Prevent occasions where minitest is not bundled in packaged versions of ruby (see #3826)
   gem 'minitest', '~> 5.11.0'
@@ -506,7 +506,7 @@ gem 'unleash', '~> 3.2.2'
 gem 'gitlab-experiment', '~> 0.7.1'
 
 # Structured logging
-gem 'lograge', '~> 0.5'
+gem 'lograge', '~> 0.12', '>= 0.12.0'
 gem 'grape_logging', '~> 1.8'
 
 # DNS Lookup
@@ -532,7 +532,7 @@ gem 'mail-smtp_pool', '~> 0.1.0', path: 'vendor/gems/mail-smtp_pool', require: f
 gem 'lockbox', '~> 0.6.2'
 
 # Email validation
-gem 'valid_email', '~> 0.1'
+gem 'valid_email', '~> 0.1', '>= 0.1.4'
 
 # JSON
 gem 'json', '~> 2.5.1'
