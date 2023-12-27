@@ -34,7 +34,7 @@ gem 'devise-pbkdf2-encryptable', '~> 0.0.0', path: 'vendor/gems/devise-pbkdf2-en
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.14'
 gem 'doorkeeper', '~> 5.5.0.rc2'
-gem 'doorkeeper-openid_connect', '~> 1.7.5'
+gem 'doorkeeper-openid_connect', '~> 1.8.4'
 gem 'rexml', '~> 3.2.5'
 gem 'ruby-saml', '~> 1.13.0'
 gem 'omniauth', '~> 1.8'
