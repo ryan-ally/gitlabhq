@@ -1,4 +1,4 @@
-FROM python:3.11.0b5-alpine
+FROM python:3.13.0b1-alpine
 
 # Edit with mysql-client, postgresql-client, sqlite3, etc. for your needs.
 # Or delete entirely if not needed.
