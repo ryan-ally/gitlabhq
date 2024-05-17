@@ -35,8 +35,8 @@ gem 'devise-pbkdf2-encryptable', '~> 0.0.0', path: 'vendor/gems/devise-pbkdf2-en
 gem 'bcrypt', '~> 3.1', '>= 3.1.14'
 gem 'doorkeeper', '~> 5.5.0.rc2'
 gem 'doorkeeper-openid_connect', '~> 1.7.5'
-gem 'rexml', '~> 3.2.5'
-gem 'ruby-saml', '~> 1.13.0'
+gem 'rexml', '~> 3.2.7'
+gem 'ruby-saml', '~> 1.14.0'
 gem 'omniauth', '~> 1.8'
 gem 'omniauth-auth0', '~> 2.0.0'
 gem 'omniauth-azure-activedirectory-v2', '~> 1.0'
@@ -49,7 +49,7 @@ gem 'omniauth-github', '~> 1.4'
 gem 'omniauth-gitlab', '~> 4.0.0', path: 'vendor/gems/omniauth-gitlab' # See vendor/gems/omniauth-gitlab/README.md
 gem 'omniauth-google-oauth2', '~> 0.6.0'
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 1.10', '>= 1.10.1'
 gem 'omniauth-shibboleth', '~> 1.3.0'
 gem 'omniauth-twitter', '~> 1.4'
 gem 'omniauth_crowd', '~> 2.4.0'
@@ -67,7 +67,7 @@ gem 'timfel-krb5-auth', '~> 0.8', group: :kerberos
 # Spam and anti-bot protection
 gem 'recaptcha', '~> 4.11', require: 'recaptcha/rails'
 gem 'akismet', '~> 3.0'
-gem 'invisible_captcha', '~> 1.1.0'
+gem 'invisible_captcha', '~> 2.0.0'
 
 # Two-factor authentication
 gem 'devise-two-factor', '~> 4.0.2'
@@ -127,7 +127,7 @@ gem 'fog-aws', '~> 3.14'
 # Locked until fog-google resolves https://github.com/fog/fog-google/issues/421.
 # Also see config/initializers/fog_core_patch.rb.
 gem 'fog-core', '= 2.1.0'
-gem 'fog-google', '~> 1.15', require: 'fog/google'
+gem 'fog-google', '~> 1.16', '>= 1.16.0', require: 'fog/google'
 gem 'fog-local', '~> 0.6'
 gem 'fog-openstack', '~> 1.0'
 gem 'fog-rackspace', '~> 0.1.1'
@@ -135,7 +135,7 @@ gem 'fog-aliyun', '~> 0.3'
 gem 'gitlab-fog-azure-rm', '~> 1.3.0', require: 'fog/azurerm'
 
 # for Google storage
-gem 'google-api-client', '~> 0.33'
+gem 'google-api-client', '~> 0.51', '>= 0.51.0'
 
 # for aws storage
 gem 'unf', '~> 0.1.4'
@@ -159,7 +159,7 @@ gem 'deckar01-task_list', '2.3.1'
 gem 'gitlab-markup', '~> 1.8.0'
 gem 'github-markup', '~> 1.7.0', require: 'github/markup'
 gem 'commonmarker', '~> 0.23.4'
-gem 'kramdown', '~> 2.3.1'
+gem 'kramdown', '~> 2.3.2'
 gem 'RedCloth', '~> 4.3.2'
 gem 'rdoc', '~> 6.3.2'
 gem 'org-ruby', '~> 0.9.12'
@@ -315,7 +315,7 @@ gem 'sentry-sidekiq', '~> 5.1.1'
 #
 gem 'pg_query', '~> 2.1.0'
 
-gem 'premailer-rails', '~> 1.10.3'
+gem 'premailer-rails', '~> 1.11.0'
 
 # LabKit: Tracing and Correlation
 gem 'gitlab-labkit', '~> 0.23.0'
@@ -327,7 +327,7 @@ gem 'thrift', '>= 0.14.0'
 gem 'ruby_parser', '~> 3.15', require: false
 gem 'rails-i18n', '~> 7.0'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.1'
 gem 'gettext', '~> 3.3', require: false, group: :development
 
 gem 'batch-loader', '~> 2.0.1'
@@ -347,10 +347,10 @@ gem 'warning', '~> 1.2.0'
 
 group :development do
   gem 'lefthook', '~> 1.0.0', require: false
-  gem 'rubocop'
-  gem 'solargraph', '~> 0.44.3', require: false
+  gem 'rubocop', '>= 1.0.0'
+  gem 'solargraph', '~> 0.45.0', require: false
 
-  gem 'letter_opener_web', '~> 2.0.0'
+  gem 'letter_opener_web', '~> 3.0.0'
 
   # Better errors handler
   gem 'better_errors', '~> 2.9.0'
@@ -366,7 +366,7 @@ group :development, :test do
   gem 'bullet', '~> 6.1.3'
   gem 'pry-byebug'
   gem 'pry-rails', '~> 0.3.9'
-  gem 'pry-shell', '~> 0.5.0'
+  gem 'pry-shell', '~> 0.5.1'
 
   gem 'awesome_print', require: false
 
@@ -383,9 +383,9 @@ group :development, :test do
   gem 'spring', '~> 2.1.0'
   gem 'spring-commands-rspec', '~> 1.0.4'
 
-  gem 'gitlab-styles', '~> 7.1.0', require: false
+  gem 'gitlab-styles', '~> 8.0.0', require: false
 
-  gem 'haml_lint', '~> 0.36.0', require: false
+  gem 'haml_lint', '~> 0.37.0', require: false
   gem 'bundler-audit', '~> 0.7.0.1', require: false
 
   gem 'benchmark-ips', '~> 2.3.0', require: false
@@ -409,7 +409,7 @@ group :development, :test do
 end
 
 group :development, :test, :danger do
-  gem 'gitlab-dangerfiles', '~> 3.4.2', require: false
+  gem 'gitlab-dangerfiles', '~> 3.4.3', require: false
 end
 
 group :development, :test, :coverage do
@@ -430,7 +430,7 @@ end
 group :test do
   gem 'fuubar', '~> 2.2.0'
   gem 'rspec-retry', '~> 0.6.1'
-  gem 'rspec_profiling', '~> 0.0.6'
+  gem 'rspec_profiling', '~> 0.0.7'
   gem 'rspec-benchmark', '~> 0.6.0'
   gem 'rspec-parameterized', require: false
 
