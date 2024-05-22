@@ -139,7 +139,7 @@
     "marked": "^4.0.10",
     "mathjax": "3",
     "mermaid": "^9.1.1",
-    "micromatch": "^4.0.5",
+    "micromatch": "^4.0.6",
     "minimatch": "^3.0.4",
     "monaco-editor": "^0.25.2",
     "monaco-editor-webpack-plugin": "^4.0.0",
