@@ -2,12 +2,12 @@
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.1.4.7'
+gem 'rails', '~> 6.1.5.0'
 
 gem 'bootsnap', '~> 1.12.0', require: false
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 3.0'
+gem 'responders', '~> 3.0', '>= 3.0.1'
 
 gem 'sprockets', '~> 3.7.0'
 
@@ -23,20 +23,20 @@ gem 'rugged', '~> 1.2'
 gem 'grape-path-helpers', '~> 1.7.0'
 
 gem 'faraday', '~> 1.0'
-gem 'marginalia', '~> 1.10.0'
+gem 'marginalia', '~> 1.10.1'
 
 # Authorization
 gem 'declarative_policy', '~> 1.1.0'
 
 # Authentication libraries
-gem 'devise', '~> 4.7.2'
+gem 'devise', '~> 4.8.0'
 gem 'devise-pbkdf2-encryptable', '~> 0.0.0', path: 'vendor/gems/devise-pbkdf2-encryptable'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.14'
-gem 'doorkeeper', '~> 5.5.0.rc2'
-gem 'doorkeeper-openid_connect', '~> 1.7.5'
+gem 'doorkeeper', '~> 5.5.0.0'
+gem 'doorkeeper-openid_connect', '~> 1.8.0'
 gem 'rexml', '~> 3.2.5'
-gem 'ruby-saml', '~> 1.13.0'
+gem 'ruby-saml', '~> 1.14.0'
 gem 'omniauth', '~> 1.8'
 gem 'omniauth-auth0', '~> 2.0.0'
 gem 'omniauth-azure-activedirectory-v2', '~> 1.0'
@@ -49,7 +49,7 @@ gem 'omniauth-github', '~> 1.4'
 gem 'omniauth-gitlab', '~> 4.0.0', path: 'vendor/gems/omniauth-gitlab' # See vendor/gems/omniauth-gitlab/README.md
 gem 'omniauth-google-oauth2', '~> 0.6.0'
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 1.10', '>= 1.10.1'
 gem 'omniauth-shibboleth', '~> 1.3.0'
 gem 'omniauth-twitter', '~> 1.4'
 gem 'omniauth_crowd', '~> 2.4.0'
@@ -67,10 +67,10 @@ gem 'timfel-krb5-auth', '~> 0.8', group: :kerberos
 # Spam and anti-bot protection
 gem 'recaptcha', '~> 4.11', require: 'recaptcha/rails'
 gem 'akismet', '~> 3.0'
-gem 'invisible_captcha', '~> 1.1.0'
+gem 'invisible_captcha', '~> 2.0.0'
 
 # Two-factor authentication
-gem 'devise-two-factor', '~> 4.0.2'
+gem 'devise-two-factor', '~> 4.1.0'
 gem 'rqrcode-rails3', '~> 0.1.7'
 gem 'attr_encrypted', '~> 3.1.0'
 gem 'u2f', '~> 0.2.1'
@@ -103,9 +103,9 @@ gem 'rack-cors', '~> 1.1.0', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.13.12'
-gem 'graphiql-rails', '~> 1.8'
-gem 'apollo_upload_server', '~> 2.1.0'
-gem 'graphql-docs', '~> 2.1.0', group: [:development, :test]
+gem 'graphiql-rails', '~> 1.9', '>= 1.9.0'
+gem 'apollo_upload_server', '~> 2.1.1'
+gem 'graphql-docs', '~> 3.0.0', group: [:development, :test]
 gem 'graphlient', '~> 0.5.0' # Used by BulkImport feature (group::import)
 
 gem 'hashie'
@@ -113,7 +113,7 @@ gem 'hashie'
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
 
 # HAML
 gem 'hamlit', '~> 2.15.0'
@@ -123,16 +123,16 @@ gem 'carrierwave', '~> 1.3'
 gem 'mini_magick', '~> 4.10.1'
 
 # for backups
-gem 'fog-aws', '~> 3.14'
+gem 'fog-aws', '~> 3.15', '>= 3.15.0'
 # Locked until fog-google resolves https://github.com/fog/fog-google/issues/421.
 # Also see config/initializers/fog_core_patch.rb.
 gem 'fog-core', '= 2.1.0'
-gem 'fog-google', '~> 1.15', require: 'fog/google'
+gem 'fog-google', '~> 1.16', '>= 1.16.0', require: 'fog/google'
 gem 'fog-local', '~> 0.6'
 gem 'fog-openstack', '~> 1.0'
-gem 'fog-rackspace', '~> 0.1.1'
+gem 'fog-rackspace', '~> 0.1.2'
 gem 'fog-aliyun', '~> 0.3'
-gem 'gitlab-fog-azure-rm', '~> 1.3.0', require: 'fog/azurerm'
+gem 'gitlab-fog-azure-rm', '~> 1.4.0', require: 'fog/azurerm'
 
 # for Google storage
 gem 'google-api-client', '~> 0.33'
@@ -154,8 +154,8 @@ gem 'faraday_middleware-aws-sigv4', '~>0.3.0'
 gem 'typhoeus', '~> 1.4.0' # Used with Elasticsearch to support http keep-alive connections
 
 # Markdown and HTML processing
-gem 'html-pipeline', '~> 2.13.2'
-gem 'deckar01-task_list', '2.3.1'
+gem 'html-pipeline', '~> 2.14.0'
+gem 'deckar01-task_list', '2.3.2'
 gem 'gitlab-markup', '~> 1.8.0'
 gem 'github-markup', '~> 1.7.0', require: 'github/markup'
 gem 'commonmarker', '~> 0.23.4'
@@ -170,9 +170,9 @@ gem 'asciidoctor-include-ext', '~> 0.4.0', require: false
 gem 'asciidoctor-plantuml', '~> 0.0.12'
 gem 'asciidoctor-kroki', '~> 0.5.0', require: false
 gem 'rouge', '~> 3.29.0'
-gem 'truncato', '~> 0.7.11'
-gem 'bootstrap_form', '~> 4.2.0'
-gem 'nokogiri', '~> 1.13.6'
+gem 'truncato', '~> 0.7.12'
+gem 'bootstrap_form', '~> 4.3.0'
+gem 'nokogiri', '~> 1.16.5'
 gem 'escape_utils', '~> 1.1'
 
 # Calendar rendering
@@ -238,7 +238,7 @@ gem 'redis', '~> 4.4.0'
 gem 'connection_pool', '~> 2.0'
 
 # Redis session store
-gem 'redis-actionpack', '~> 5.2.0'
+gem 'redis-actionpack', '~> 5.3.0'
 
 # Discord integration
 gem 'discordrb-webhooks', '~> 3.4', require: false
@@ -266,14 +266,14 @@ gem 'ruby-fogbugz', '~> 0.2.1'
 gem 'kubeclient', '~> 4.9.2'
 
 # Sanitize user input
-gem 'sanitize', '~> 6.0'
+gem 'sanitize', '~> 6.0', '>= 6.0.1'
 gem 'babosa', '~> 1.0.4'
 
 # Sanitizes SVG input
-gem 'loofah', '~> 2.18.0'
+gem 'loofah', '~> 2.19.0'
 
 # Working with license
-gem 'licensee', '~> 9.14.1'
+gem 'licensee', '~> 9.15.0'
 
 # Detect and convert string character encoding
 gem 'charlock_holmes', '~> 0.7.7'
@@ -290,7 +290,7 @@ gem 'gitlab_chronic_duration', '~> 0.10.6.2'
 
 gem 'rack-proxy', '~> 0.7.2'
 
-gem 'sassc-rails', '~> 2.1.0'
+gem 'sassc-rails', '~> 2.1.1'
 gem 'autoprefixer-rails', '10.2.5.1'
 gem 'terser', '1.0.2'
 
@@ -308,26 +308,26 @@ gem 'rack-attack', '~> 6.6.0'
 # Sentry integration
 gem 'sentry-raven', '~> 3.1'
 gem 'sentry-ruby', '~> 5.1.1'
-gem 'sentry-rails', '~> 5.1.1'
+gem 'sentry-rails', '~> 5.2.0'
 gem 'sentry-sidekiq', '~> 5.1.1'
 
 # PostgreSQL query parsing
 #
 gem 'pg_query', '~> 2.1.0'
 
-gem 'premailer-rails', '~> 1.10.3'
+gem 'premailer-rails', '~> 1.11.0'
 
 # LabKit: Tracing and Correlation
-gem 'gitlab-labkit', '~> 0.23.0'
+gem 'gitlab-labkit', '~> 0.24.0'
 # Thrift is a dependency of gitlab-labkit, we want a version higher than 0.14.0
 # because of https://gitlab.com/gitlab-org/gitlab/-/issues/321900
 gem 'thrift', '>= 0.14.0'
 
 # I18n
 gem 'ruby_parser', '~> 3.15', require: false
-gem 'rails-i18n', '~> 7.0'
+gem 'rails-i18n', '~> 7.0', '>= 7.0.5'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.1'
 gem 'gettext', '~> 3.3', require: false, group: :development
 
 gem 'batch-loader', '~> 2.0.1'
@@ -348,9 +348,9 @@ gem 'warning', '~> 1.2.0'
 group :development do
   gem 'lefthook', '~> 1.0.0', require: false
   gem 'rubocop'
-  gem 'solargraph', '~> 0.44.3', require: false
+  gem 'solargraph', '~> 0.45.0', require: false
 
-  gem 'letter_opener_web', '~> 2.0.0'
+  gem 'letter_opener_web', '~> 3.0.0'
 
   # Better errors handler
   gem 'better_errors', '~> 2.9.0'
@@ -371,8 +371,8 @@ group :development, :test do
   gem 'awesome_print', require: false
 
   gem 'database_cleaner', '~> 1.7.0'
-  gem 'factory_bot_rails', '~> 6.2.0'
-  gem 'rspec-rails', '~> 5.0.1'
+  gem 'factory_bot_rails', '~> 6.3.0'
+  gem 'rspec-rails', '~> 5.0.2'
 
   # Prevent occasions where minitest is not bundled in packaged versions of ruby (see #3826)
   gem 'minitest', '~> 5.11.0'
@@ -430,12 +430,12 @@ end
 group :test do
   gem 'fuubar', '~> 2.2.0'
   gem 'rspec-retry', '~> 0.6.1'
-  gem 'rspec_profiling', '~> 0.0.6'
+  gem 'rspec_profiling', '~> 0.0.7'
   gem 'rspec-benchmark', '~> 0.6.0'
   gem 'rspec-parameterized', require: false
 
-  gem 'capybara', '~> 3.35.3'
-  gem 'capybara-screenshot', '~> 1.0.22'
+  gem 'capybara', '~> 3.36.0'
+  gem 'capybara-screenshot', '~> 1.0.23'
   gem 'selenium-webdriver', '~> 3.142'
 
   gem 'shoulda-matchers', '~> 5.1.0', require: false
@@ -458,7 +458,7 @@ gem 'octokit', '~> 4.15'
 gem 'gitlab-mail_room', '~> 0.0.9', require: 'mail_room'
 
 gem 'email_reply_trimmer', '~> 0.1'
-gem 'html2text'
+gem 'html2text', '>= 0.2.1'
 
 gem 'ruby-prof', '~> 1.3.0'
 gem 'stackprof', '~> 0.2.15', require: false
@@ -471,7 +471,7 @@ gem 'activerecord-explain-analyze', '~> 0.1', require: false
 gem 'oauth2', '~> 2.0'
 
 # Health check
-gem 'health_check', '~> 3.0'
+gem 'health_check', '~> 3.1', '>= 3.1.0'
 
 # System information
 gem 'vmstat', '~> 2.3.0'
@@ -506,7 +506,7 @@ gem 'unleash', '~> 3.2.2'
 gem 'gitlab-experiment', '~> 0.7.1'
 
 # Structured logging
-gem 'lograge', '~> 0.5'
+gem 'lograge', '~> 0.12', '>= 0.12.0'
 gem 'grape_logging', '~> 1.8'
 
 # DNS Lookup
