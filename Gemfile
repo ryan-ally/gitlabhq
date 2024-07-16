@@ -14,7 +14,7 @@ gem 'sprockets', '~> 3.7.0'
 gem 'view_component', '~> 2.50.0'
 
 # Default values for AR models
-gem 'default_value_for', '~> 3.4.0'
+gem 'default_value_for', '~> 3.5.0'
 
 # Supported DBs
 gem 'pg', '~> 1.3.0'
