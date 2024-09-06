@@ -484,7 +484,7 @@ gem 'net-ntp'
 gem 'ssh_data', '~> 1.3'
 
 # Spamcheck GRPC protocol definitions
-gem 'spamcheck', '~> 0.1.0'
+gem 'spamcheck', '~> 1.3.2'
 
 # Gitaly GRPC protocol definitions
 gem 'gitaly', '~> 15.1.0-rc1'
