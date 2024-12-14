@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.1.4.7'
+gem 'rails', '~> 7.0.8.7'
 
 gem 'bootsnap', '~> 1.12.0', require: false
 
@@ -103,8 +103,8 @@ gem 'rack-cors', '~> 1.1.0', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.13.12'
-gem 'graphiql-rails', '~> 1.8'
-gem 'apollo_upload_server', '~> 2.1.0'
+gem 'graphiql-rails', '~> 1.10', '>= 1.10.0'
+gem 'apollo_upload_server', '~> 2.1.2'
 gem 'graphql-docs', '~> 2.1.0', group: [:development, :test]
 gem 'graphlient', '~> 0.5.0' # Used by BulkImport feature (group::import)
 
