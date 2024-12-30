@@ -156,7 +156,7 @@
     "prosemirror-markdown": "1.8.0",
     "prosemirror-model": "^1.16.1",
     "prosemirror-state": "^1.3.4",
-    "prosemirror-tables": "^1.1.1",
+    "prosemirror-tables": "^1.6.2",
     "prosemirror-view": "^1.23.13",
     "raphael": "^2.2.7",
     "raw-loader": "^4.0.2",
