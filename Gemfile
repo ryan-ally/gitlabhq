@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.1.4.7'
+gem 'rails', '~> 7.0.0.0'
 
 gem 'bootsnap', '~> 1.12.0', require: false
 
@@ -97,14 +97,14 @@ gem 'gitlab_omniauth-ldap', '~> 2.1.1', require: 'omniauth-ldap'
 gem 'net-ldap', '~> 0.16.3'
 
 # API
-gem 'grape', '~> 1.5.2'
+gem 'grape', '~> 2.1.0'
 gem 'grape-entity', '~> 0.10.0'
 gem 'rack-cors', '~> 1.1.0', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.13.12'
-gem 'graphiql-rails', '~> 1.8'
-gem 'apollo_upload_server', '~> 2.1.0'
+gem 'graphiql-rails', '~> 1.10', '>= 1.10.0'
+gem 'apollo_upload_server', '~> 2.1.2'
 gem 'graphql-docs', '~> 2.1.0', group: [:development, :test]
 gem 'graphlient', '~> 0.5.0' # Used by BulkImport feature (group::import)
 
@@ -183,7 +183,7 @@ gem 'diffy', '~> 3.3'
 gem 'diff_match_patch', '~> 0.1.0'
 
 # Application server
-gem 'rack', '~> 2.2.4'
+gem 'rack', '~> 2.2.12'
 # https://github.com/zombocom/rack-timeout/blob/master/README.md#rails-apps-manually
 gem 'rack-timeout', '~> 0.6.0', require: 'rack/timeout/base'
 
@@ -200,7 +200,7 @@ gem 'state_machines-activerecord', '~> 0.8.0'
 gem 'acts-as-taggable-on', '~> 9.0'
 
 # Background jobs
-gem 'sidekiq', '~> 6.4'
+gem 'sidekiq', '~> 8.0', '>= 8.0.0'
 gem 'sidekiq-cron', '~> 1.2'
 gem 'redis-namespace', '~> 1.8.1'
 gem 'gitlab-sidekiq-fetcher', '0.8.0', require: 'sidekiq-reliable-fetch'
