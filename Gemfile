@@ -127,7 +127,7 @@ gem 'fog-aws', '~> 3.14'
 # Locked until fog-google resolves https://github.com/fog/fog-google/issues/421.
 # Also see config/initializers/fog_core_patch.rb.
 gem 'fog-core', '= 2.1.0'
-gem 'fog-google', '~> 1.15', require: 'fog/google'
+gem 'fog-google', '~> 1.16', '>= 1.16.0', require: 'fog/google'
 gem 'fog-local', '~> 0.6'
 gem 'fog-openstack', '~> 1.0'
 gem 'fog-rackspace', '~> 0.1.1'
@@ -135,7 +135,7 @@ gem 'fog-aliyun', '~> 0.3'
 gem 'gitlab-fog-azure-rm', '~> 1.3.0', require: 'fog/azurerm'
 
 # for Google storage
-gem 'google-api-client', '~> 0.33'
+gem 'google-api-client', '~> 0.53', '>= 0.53.0'
 
 # for aws storage
 gem 'unf', '~> 0.1.4'
@@ -347,8 +347,8 @@ gem 'warning', '~> 1.2.0'
 
 group :development do
   gem 'lefthook', '~> 1.0.0', require: false
-  gem 'rubocop'
-  gem 'solargraph', '~> 0.44.3', require: false
+  gem 'rubocop', '>= 1.66.0'
+  gem 'solargraph', '~> 0.45.0', require: false
 
   gem 'letter_opener_web', '~> 2.0.0'
 
@@ -383,9 +383,9 @@ group :development, :test do
   gem 'spring', '~> 2.1.0'
   gem 'spring-commands-rspec', '~> 1.0.4'
 
-  gem 'gitlab-styles', '~> 7.1.0', require: false
+  gem 'gitlab-styles', '~> 13.0.0', require: false
 
-  gem 'haml_lint', '~> 0.36.0', require: false
+  gem 'haml_lint', '~> 0.37.0', require: false
   gem 'bundler-audit', '~> 0.7.0.1', require: false
 
   gem 'benchmark-ips', '~> 2.3.0', require: false
