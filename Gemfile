@@ -209,7 +209,7 @@ gem 'gitlab-sidekiq-fetcher', '0.8.0', require: 'sidekiq-reliable-fetch'
 gem 'fugit', '~> 1.2.1'
 
 # HTTP requests
-gem 'httparty', '~> 0.16.4'
+gem 'httparty', '~> 0.24.0'
 
 # Colored output to console
 gem 'rainbow', '~> 3.0'
@@ -409,7 +409,7 @@ group :development, :test do
 end
 
 group :development, :test, :danger do
-  gem 'gitlab-dangerfiles', '~> 3.4.2', require: false
+  gem 'gitlab-dangerfiles', '~> 3.4.3', require: false
 end
 
 group :development, :test, :coverage do
