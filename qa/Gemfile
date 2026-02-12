@@ -22,13 +22,13 @@ gem 'timecop', '~> 0.9.1'
 gem 'parallel', '~> 1.19'
 gem 'rainbow', '~> 3.0.0'
 gem 'rspec-parameterized', '~> 0.4.2'
-gem 'octokit', '~> 4.21'
+gem 'octokit', '~> 4.23', '>= 4.23.0'
 gem 'webdrivers', '~> 5.0'
 gem 'zeitwerk', '~> 2.4'
 gem 'influxdb-client', '~> 1.17'
 gem 'terminal-table', '~> 3.0.0', require: false
 gem 'slack-notifier', '~> 2.4', require: false
-gem 'fog-google', '~> 1.17', require: false
+gem 'fog-google', '~> 1.18', '>= 1.18.0', require: false
 
 gem 'confiner', '~> 0.3'
 
